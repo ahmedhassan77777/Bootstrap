@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav1{
+    background-color: #003366;
+}
+.body1{
+    background-color: #C0C0C0;
+    position: relative;
+}
+.carousel-item img{
+    height: 95vh;
+}
+.cap-home {
+    position: absolute;
+    bottom: 50px;
+    right: 35%;
+    background-color:  rgba(121, 121, 224,.5);
+    padding: 10px;
+    text-align: center;
+}
+ @media (max-width: 768px) {
+    .cap-home{
+        width: 80%;
+        right: 9%;
+        background-color:  rgba(121, 121, 224,.5);
+    }
+    .navbar-nav {
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+    }
+    .h2-home3{ 
+        visibility: visible;
+        font-size: 36px; 
+        color: #fff;
+        text-align: center;
+        margin: 0; 
+        width: 40%;
+        top: 20%; 
+        left: 30%; 
+        transform: translate(-50%, -50%); 
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+    }
+    
+    
+    
+
+}
+.arrow-home{
+    height: 100vh;
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background-color: rgb(121, 121, 224);
+}
+.p-modal{
+    font-size: 12px;
+    color: gray;
+    margin-top: -10px;
+}
+.fixed-icon {
+    position: fixed;
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    color: #007bff;
+    border-radius: 5px 0 0 5px; 
+    padding: 15px 10px;
+    width: 50px;
+    z-index: 1000;
+    text-align: center;
+}
+.fixed-icon a{
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+.fixed-icon a:hover{
+    opacity: .5;
+}
+.fixed-icon i {
+    display: block;
+    margin: 10px 0;
+    font-size: 50px;
+    cursor: pointer;
+}
+.h2-home2{
+    background: linear-gradient( to bottom,#2e88b3, #217196, #ea00ff); 
+  -webkit-background-clip: text; 
+  color: transparent; 
+}
+.p-home2{
+    color: gray;
+}
+#btn-lernmore{
+    background: rgb(255, 255, 255);
+    color: #217196;
+}
+#btn-lernmore:hover{
+    opacity: .5;
+}
+.card:nth-child(2), .card:nth-child(3) {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.card-header .btn {
+    display: block;
+    width: 100%;
+    text-align: left; 
+    padding-right: 20px; 
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s ease;
+} 
+.btn:not(.collapsed) .arrow {
+   transform: rotate(90deg); 
+}
+.card-header {
+    position: relative;
+    overflow: hidden; 
+    padding-right: 30px; 
+  }  
+.arrow {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.btn:not(.collapsed) .arrow {
+    transform: translateY(-50%) rotate(90deg); 
+}
+.p-model2{
+    margin-left: 350px;
+}
+.ptn-modle2{
+    margin-left: 375px;
+    width: 90px;
+}
+.info-con{
+    width: 100wh;
+    height: 400px;
+    background-image: url(../photo/DALL·E\ 2024-11-14\ 16.38.50\ -\ A\ modern\ and\ visually\ appealing\ background\ for\ an\ online\ course\ section\ called\ \'Sh-Music\'.\ The\ design\ should\ feature\ a\ stylish\ blend\ of\ musical\ instru.webp);
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+}
+.img-cour1-know{
+    width: 95%;
+    height: 65%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.col-img-co{
+    width: 150px;
+    height: 540px;
+    position: relative;
+}
+.aftr-befor-div:after{
+    position: absolute;
+    content: "";
+    width:0 ;
+    height: 0;
+    top:0;
+    left: 0;
+    background-color: rgb(99, 128, 184);
+    opacity: .0;
+    border-radius: 5px;
+}
+.aftr-befor-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+    z-index: 1;
+    border-radius: 5px;
+}
+.aftr-befor-div:before{
+    position: absolute;
+    content: "";
+    width:0 ;
+    height: 0;
+    bottom: 0;
+    right:  0;
+    background-color: rgb(99, 128, 184);
+    opacity: .0;
+    border-radius: 5px;
+}
+.aftr-befor-div:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+    z-index: 1;
+    border-radius: 5px;
+}
+.div-img,.div-img2{
+    background-image: url(../photo/WhatsApp\ Image\ 2024-11-14\ at\ 20.16.53_6988ea9c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.div-img:hover{
+    transform: scale(.8);
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(8, 50, 90, 0.726);
+    top: 0;
+    left: 0;
+}
+.div-img{
+    position: relative;
+}
+.img-foooter{
+    margin-top: 100px;
+}
+.p-web{
+    margin-top: -20px;
+}
+.div-img2{
+    background-image: url(../photo/DALL·E\ 2024-11-15\ 19.55.37\ -\ A\ professional\ female\ music\ education\ professor\ standing\ in\ a\ classroom\,\ with\ a\ piano\ and\ musical\ instruments\ in\ the\ background.\ She\ is\ wearing\ academ.webp);
+}
+.div-img3{
+    background-image: url(../photo/DALL·E\ 2024-11-15\ 20.05.59\ -\ Two\ young\ brothers\,\ about\ the\ same\ age\,\ standing\ side\ by\ side.\ They\ are\ smiling\ and\ dressed\ casually\ in\ simple\ clothes\,\ reflecting\ a\ sense\ of\ happines.webp);
+}
+.img-news{
+    background-image: url(../photo/DALL·E\ 2024-11-16\ 21.40.53\ -\ A\ clarinet\ with\ its\ sleek\,\ dark\ wood\ body\ and\ silver\ keys\,\ placed\ on\ a\ simple\,\ elegant\ background\,\ well-lit\ to\ highlight\ its\ detailed\ design.webp);
+}
+.img-news1,.img-news2,.img-news3,.img-news4{
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 18% 100%);
+}
+.img-news2,.img-news4{
+    clip-path: polygon(0 0, 100% 0%, 79% 100%, 0 100%);
+}
+.img-news2{
+    background-image: url(https://img.freepik.com/free-vector/vintage-trumpet-illustration-vector-remixed-from-artwork-by-thomas-dooley_53876-125471.jpg?uid=R162970439&ga=GA1.1.1797260353.1726583975&semt=ais_hybrid);
+}
+.img-news3{
+    background-image: url(https://img.freepik.com/premium-psd/classic-accordion-style-wooden-cartoon-3d-render_364106-1529.jpg?uid=R162970439&ga=GA1.1.1797260353.1726583975&semt=ais_hybrid);
+}
+.img-news4{
+background-image: url(https://img.freepik.com/premium-photo/xylophone-player-hands-with-sticks-wooden-sounds_266732-6561.jpg?uid=R162970439&ga=GA1.1.1797260353.1726583975&semt=ais_hybrid);
+}
+.i-3d{
+    width: 100%;
+  
+}
+.aftr-befor-div .d-flex {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.aftr-befor-div span {
+    margin-left: 10px; 
+    font-size: x-large;
+}
+
+.btn-cour-img {
+    margin-right: 10px; 
+}
+.img-footer-ttt{
+     box-shadow: 0px 0px 20px 5px rgba(214, 214, 214, 0.8);;
+}
+
+.link-footer:hover p {
+    opacity: .5;
+  }

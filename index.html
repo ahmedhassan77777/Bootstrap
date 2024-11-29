@@ -1,0 +1,616 @@
+<html>
+<head>
+ <link rel="stylesheet" href="css/stylecss.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<title> Bootstrap </title>
+</head>
+<body class="body1">
+    <nav class="navbar navbar-expand-lg navbar-dark nav1 fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="javascript:void(0)"><img class="rounded-circle" src="photo/DALL·E 2024-11-07 19.52.53 - A modern, stylish logo for a music website named 'Sh-music'. This version features a minimalist design with rounded, smooth typography, incorporating .webp" width="70" height="70" alt="logo"></a>      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link h-nav h1-nav text-light  " href="javascript:void(0)"><h5 class="h2-home2  ">Sh-Music</h5></a>
+              </li>
+              <span class="border-end"></span>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void(0)">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown">courses</a>
+                <ul class="dropdown-menu bg-primary-subtle">
+                  <li><a class="dropdown-item text-secondary" href="#">Piano</a></li>
+                  <li><a class="dropdown-item text-secondary" href="#"> Guitar </a></li>
+                  <hr class="border-bottom text-secondary"></hr>
+                  <li><a class="dropdown-item text-secondary" href="#">Violin</a></li>
+                  <li><a class="dropdown-item text-secondary" href="#">Flute</a></li>
+                  <li><a class="dropdown-item text-secondary" href="#">Drums </a></li>
+                  <li><a class="dropdown-item text-secondary" href="#">Trumpet </a></li>
+                  <li><a class="dropdown-item text-secondary" href="#">Cello </a></li>
+                  <li><a class="dropdown-item text-secondary" href="#">Saxophone </a></li>
+                  <li><a class="dropdown-item text-secondary" href="#">More... </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void(0)">about</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary me-2" type="button">Search</button>
+              <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="h2-home3">
+      <h5  style="visibility: hidden; width: 40%; ">Sh-Music</h5>
+      <span class="border-end"></span>
+    </div>
+    <!-- ############################################################################################### -->
+    <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header bg-primary text-white">
+          <h4 class="modal-title">Login</h4>
+          <button type="button" class="btn-close bg-primary-subtle" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label text-primary">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <p class="p-modal">We will never share your email with anyone else.</p>
+            <div class="mb-3">
+              <label for="pwd" class="form-label text-primary">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input m-1" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+              <label class="form-check-label" for="mySwitch"> Remmember me</label>
+            </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer position-relative">
+          <button class="btn btn-primary " style="position: absolute; left: 0;" type="button">Login</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+     <!-- Carousel -->
+   <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-dark"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="bg-dark"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="bg-dark"></button>
+      </div>
+  
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner ">
+           <div class="carousel-item active ">
+             <img src="https://img.freepik.com/free-vector/grand-piano-with-music-notes-background_1308-72239.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid" alt="Los Angeles" class="d-block w-100">
+             <div class="cap-home">
+                <h4 >Piano course</h4>
+                 <p >Learn to master the music through the keys of the piano</p>
+                 <button type="button" class=" btn btn-primary  rounded border-0 text-white p-2" > Book with us</button>
+              </div>
+          </div>
+           <div class="carousel-item  ">
+             <img src="https://img.freepik.com/free-vector/violin-classical-music-instrument-with-melody-symbols-purple-splotch_1308-70040.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid" alt="Chicago" class="d-block w-100">
+             <div class="cap-home">
+                 <h4 >Violin course</h4>
+                 <p >Play the harmony of life with the strings of the violin</p>
+                 <button type="button" class=" btn btn-primary  rounded border-0 text-white p-2" > Book with us</button>
+              </div>
+           </div>
+           <div class="carousel-item  mx-auto">
+             <img src="https://img.freepik.com/free-photo/old-wooden-guitar-isolated_144627-4374.jpg?t=st=1731014876~exp=1731018476~hmac=1af299cd46b564eb96f1eff9b24c4a775091f236f47c83a6e00f7fd3db144116&w=996" alt="New York" class="d-block w-100">
+             <div class="cap-home">
+               <h4 >Guitar course</h4>
+               <p >Strum the chords, discover your rhythm, and create your sound</p>
+               <button type="button" class=" btn btn-primary  rounded border-0 text-white p-2" > Book with us</button>
+              </div>
+            </div>
+        </div>
+    
+  
+       <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev arrow-home"  type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next arrow-home" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+  
+     
+    <div class="fixed-icon">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://wa.me/+201553399753" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <!-- ############################################################################################### -->
+  <div class="container-fluid bg-primary-subtle rounded">
+    <div class="container pt-4">
+      <h2 class="h2-home2">WELCOME</h2>
+      <p class="p-home2">Planning to book with us? Piano course, Guitar course, Violin course, Flute course, Drums course, Trumpet course, Cello course, Saxophone course and  More courses from 3 months to 6 months of musical dream, we will take care of all you needs to anycourse</p>
+      <button type="button" class=" btn mb-3  rounded border-0 text-primary p-2 px-3" id="btn-lernmore" >Learn more </button>
+    </div>
+  </div>
+  <!-- ################################################################################################### -->
+   <hr>
+   <div class="mt-4 p-5 bg-primary text-white rounded text-center">
+     <h1>Popular course  </h1>
+   </div>
+   <!-- ################################################################################################## -->
+  
+   <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          <h2 class="h2-home2">Piano Course</h2>  <span class="arrow">&#9654;</span>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Embark on your musical journey with our comprehensive Piano Course, tailored for beginners and aspiring musicians. This course covers essential music theory, hands-on techniques, and sight-reading practice. You’ll learn note recognition, proper hand positioning, and gradually progress through pieces suited to your skill level. Whether you’re aiming to become a professional pianist or simply enjoy playing, our course provides a flexible and enjoyable learning experience.
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+          <h2 class="h2-home2">Guitar Course</h2> <span class="arrow">&#9654;</span>
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Join our Guitar Course and unlock the world of music with practical lessons designed for beginners and intermediate players. This course covers the fundamentals of guitar playing, including chord progressions, strumming techniques, and note reading. You'll learn how to play popular songs, improve your rhythm, and develop finger strength and dexterity. Whether you're looking to play casually or pursue a musical career, our Guitar Course offers a flexible and engaging learning experience.
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          <h2 class="h2-home2">Violin Course</h2> <span class="arrow">&#9654;</span>
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Dive into the world of classical music with our comprehensive Violin Course, designed for both beginners and intermediate players. You'll learn the basics of violin playing, including bowing techniques, note reading, and posture. With step-by-step lessons, you'll develop your skills and play beautiful melodies. This course offers the perfect balance of theory and practice, helping you progress at your own pace while enjoying the process of learning the violin.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ########################################################################### -->
+  <hr>
+  <div class="mt-3 p-3 bg-primary text-white rounded text-center">
+    <h1>Message Us</h1> 
+  </div>
+  <div class="container-fluid bg-primary-subtle rounded">
+    <div class="container pt-4">
+      <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger; font-weight: bold;" >To send your Message </span><span class="text-primary-emphasis" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger; font-weight: bold;">Press Here</span>
+      <div>
+        <button type="button" class="btn btn-primary mb-3 mt-3" data-bs-toggle="modal" data-bs-target="#myCustomModal"
+         data-bs-toggle="popover" 
+          data-bs-content="Sended" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="top" 
+          title="Send"  >
+          Send
+       </button>
+        
+        <!-- The Modal -->
+        <div class="modal" id="myCustomModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p class="text-dark"> Successfully sent. </p>
+                <p class=" p-model2">.تم الارسال بنجاح</p>
+                <button type="button" class="btn btn-primary  ptn-modle2" data-bs-dismiss="modal">ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-floating pb-3">
+        <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+        <label for="comment">Message US:</label>
+      </div>
+    </div>
+  </div>
+  <!-- ########################################################################################## -->
+   <hr>
+   <div class="mt-3 p-3 bg-primary text-white rounded text-center">
+    <h1>Ask about our</h1> 
+  </div>
+  <div class="container-fluid bg-primary-subtle rounded">
+    <div class="container pt-4">
+      <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger; font-weight: bold;" >To Ask </span><span class="text-primary-emphasis" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger; font-weight: bold;">Press Here</span>
+      <div>
+        <button type="button" class="btn btn-primary mb-3 mt-3" data-bs-toggle="modal" data-bs-target="#myCustomModa2"
+         data-bs-toggle="popover" 
+          data-bs-content="Sended" 
+          data-bs-toggle="tooltip" 
+          data-bs-placement="top" 
+          title="Send"  >
+          Send
+       </button>
+        
+        <!-- The Modal -->
+        <div class="modal" id="myCustomModa2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p class="text-dark"> Successfully sent. </p>
+                <p class=" p-model2"> .تم الارسال بنجاح</p>
+                <button type="button" class="btn btn-primary  ptn-modle2" data-bs-dismiss="modal">ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-floating pb-3">
+        <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+        <label for="comment">Ask here:</label>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- ################################################################################################# -->
+  <div class="info-con">
+  </div>
+  <!-- ############################################################################################# -->
+  <div class=" p-3 bg-primary-subtle text-white rounded text-center">
+      <h1 class="h2-home2">our valuable courses </h1> 
+  </div>
+  <!-- ############################################################################################# -->
+   <div class="container-md mt-5 ">
+    <div class="row "  >
+      <div class="col-12 col-lg-3 bg-white col-img-co rounded mx-md-5">
+        <div class="aftr-befor-div rounded text-center">
+            <img class="img-cour1-know ms-2 rounded" 
+                 src="https://img.freepik.com/free-vector/elegant-jazz-banners-with-piano-keys_23-2147607165.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid" 
+                 alt="piano">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="text-primary" 
+                      style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Piano
+                </span>
+                <button type="button" 
+                        class="btn btn-cour-img rounded border-0 text-white bg-primary p-2 px-3">
+                    Know more
+                </button>
+            </div>
+            <p class="text-primary mt-3">
+                A versatile instrument suited to most music genres, from classical to jazz.
+            </p>
+        </div>
+    </div>
+    
+      <!-- ############################################################################################### -->
+      <div class="col-12 col-lg-3  bg-white col-img-co rounded mx-md-3 my-5 my-md-0"  >
+        <div class="aftr-befor-div rounded">
+         <img class="img-cour1-know ms-2 rounded" src="https://img.freepik.com/free-psd/electric-guitar-isolated_23-2151853818.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid"alt="piano">
+         <div class="d-flex justify-content-between align-items-center "> <span class=" text-primary" style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Guitar</span> <button type="button"  class=" btn my-3  btn-cour-img  rounded border-0 text-white bg-primary p-2 px-3"  >Know more </button></div>
+         <p class=" text-primary "> Essential for rock, blues, and folk music, with popular types including electric and acoustic guitars.</p>
+       </div>
+     </div>
+     <!-- ############################################################################################### -->
+
+     <div class="col-12 col-lg-3 bg-white col-img-co rounded mx-md-5"  >
+       <div class="aftr-befor-div rounded">
+         <img class="img-cour1-know ms-2 rounded" src="https://img.freepik.com/free-photo/violin-bow-white-background_1150-8455.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid"alt="piano">
+         <div class="d-flex justify-content-between align-items-center "> <span class=" text-primary" style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Violin</span> <button type="button"  class=" btn my-3  btn-cour-img  rounded border-0 text-white bg-primary p-2 px-3"  >Know more </button></div>
+         <p class=" text-primary"> A string instrument that adds beautiful touches to classical music and some folk genres.</p>
+        </div>
+     </div>
+    </div>
+   </div>
+   <!-- ################################################################################################### -->
+   <div class="container mt-5 ">
+    <div class="row "  >
+        <div class="col-12 col-lg-3 bg-white col-img-co rounded mx-md-5"  >
+          <div class="aftr-befor-div rounded">
+           <img class="img-cour1-know ms-2 rounded" src="https://img.freepik.com/free-vector/classic-saxophone-with-music-notes_1308-5508.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid"alt="piano">
+           <div class="d-flex justify-content-between align-items-center "> <span class=" text-primary" style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Saxophone</span> <button type="button"  class=" btn my-3  btn-cour-img  rounded border-0 text-white bg-primary p-2 px-3"  >Know more </button></div>
+           <p class=" text-primary">  Iconic in jazz, but also used in rock and blues.</p>
+         </div>
+      </div>
+      <!-- ############################################################################################### -->
+      <div class="col-12 col-lg-3 bg-white col-img-co rounded mx-md-3 my-5 my-md-0"  >
+        <div class="aftr-befor-div rounded">
+         <img class="img-cour1-know ms-2 rounded" src="https://img.freepik.com/free-photo/drums-drumsticks_1204-355.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid"alt="piano">
+         <div class="d-flex justify-content-between align-items-center "> <span class=" text-primary" style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Drums</span> <button type="button"  class=" btn my-3  btn-cour-img  rounded border-0 text-white bg-primary p-2 px-3"  >Know more </button></div>
+         <p class=" text-primary"> Provide rhythm and are essential in most modern genres like rock, pop, and hip-hop.</p>
+       </div>
+     </div>
+     <!-- ############################################################################################### -->
+
+     <div class="col-12 col-lg-3 bg-white col-img-co rounded mx-md-5 "  >
+       <div class="aftr-befor-div rounded">
+        <img class="img-cour1-know ms-2 rounded" src="https://img.freepik.com/free-photo/close-up-metal-flute_23-2148201752.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid"alt="piano">
+        <div class="d-flex justify-content-between align-items-center "> <span class=" text-primary" style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Flute</span> <button type="button"  class=" btn my-3  btn-cour-img  rounded border-0 text-white bg-primary p-2 px-3"  >Know more </button></div>
+        <p class=" text-primary">  Known for its soft, mellow sound, often used in classical and traditional Eastern music.</p>
+        </div>
+     </div>
+    </div>
+   </div>
+   <!-- ################################################################################################################### -->
+  <div class="container mt-5 ">
+    <div class="row ms-md-5 justify-content-md-center align-content-md-center "  >
+        <div class="col-12 col-lg-3 bg-white  col-img-co rounded mx-md-5"  >
+          <div class="aftr-befor-div rounded">
+           <img class="img-cour1-know ms-2 rounded" src="https://img.freepik.com/free-photo/violin-front-view-gray_155003-458.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid"alt="piano">
+           <div class="d-flex justify-content-between align-items-center "> <span class=" text-primary" style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Cello</span> <button type="button"  class=" btn my-3  btn-cour-img  rounded border-0 text-white bg-primary p-2 px-3"  >Know more </button></div>
+           <p class=" text-primary">  Delivers deep, resonant tones, foundational in classical music.</p>
+         </div>
+      </div>
+      <!-- ############################################################################################### -->
+      <div class="col-12 col-lg-3 bg-white col-img-co rounded mx-md-5 mt-5 mt-md-0 "    >
+        <div class="aftr-befor-div rounded">
+         <img class="img-cour1-know ms-2 rounded" src="https://img.freepik.com/premium-photo/traditional-persian-musical-instruments-3d-such-as-tar-daf_1093726-17238.jpg?ga=GA1.1.1797260353.1726583975&semt=ais_hybrid"alt="piano">
+         <div class="d-flex justify-content-between align-items-center "> <span class=" text-primary" style="font-size:x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Oud</span> <button type="button"  class=" btn my-3  btn-cour-img  rounded border-0 text-white bg-primary p-2 px-3"  >Know more </button></div>
+         <p class=" text-primary">  An essential instrument in Arabic classical music, adding depth and a distinct Eastern sound.</p>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- ############################################################################################### -->
+  <div class="info-con mt-5">
+  </div>
+  <!-- ############################################################################################### -->
+  <hr>
+  <div class=" p-3 bg-primary-subtle text-white rounded text-center">
+    <h1 class="h2-home2">Thank For </h1> 
+  </div>
+  <!-- ############################################################################################### -->
+   <div class="container ">
+    <div class=" img-fotor mt-5  mb-5 text-white   row">
+      <div class="div-img rounded-2 ms-md-5 me-md-5 mx-5 mx-md-0 col-9 col-lg-3 " style=" height: 400;">
+        <div class="overlay ">
+          <h5 class="mt-4 ps-4"> All Thanks and appreciation</h5>
+          <i class="fa-regular fa-clock mt-2 ps-4"></i><span class="mt-2 ps-1">Nov 14,2024</span>
+           <div>
+            <img class="img-foooter ms-4 " src="photo/WhatsApp Image 2024-11-14 at 20.16.53_6988ea9c.jpg" alt="Ahmed Hassan" style="border-radius: 50%;" width="100" height="130">
+            <p class="ms-4">Eng. Ahmed Hassan</p>
+            <p class="ms-4 p-web">Web developer</p>
+           </div>
+        </div>
+      </div>
+      <!-- ##################################### -->
+        <div class="div-img2   div-img rounded-2 my-3   my-md-0 mx-5 mx-md-0  mx-lg-5 col-9 col-lg-3" style=" height: 400;" >
+          <div class="overlay">
+            <h5 class="mt-4 ps-4"> All Thanks and appreciation</h5>
+            <i class="fa-regular fa-clock mt-2 ps-4"></i><span class="mt-2 ps-1">Nov 14,2024</span>
+           <div>
+             <img class="img-foooter ms-4" src="photo/DALL·E 2024-11-15 19.55.37 - A professional female music education professor standing in a classroom, with a piano and musical instruments in the background. She is wearing academ.webp" alt="Ahmed Hassan" style="border-radius: 50%;" width="100" height="130">
+             <p class="ms-4">Dr.sh</p>
+             <p class="ms-4 p-web">Doctor of Music Education</p>
+           </div>
+          </div>
+        </div>
+      <!-- ###########################################3 -->
+      <div class="div-img div-img3 rounded-2 mx-5 mx-md-0 ms-md-5 col-9 col-lg-3" style=" height: 400;">
+        <div class="overlay">
+          <h5 class="mt-4 ps-4"> All Thanks and appreciation</h5>
+          <i class="fa-regular fa-clock mt-2 ps-4"></i><span class="mt-2 ps-1">Nov 14,2024</span>
+           <div>
+            <img class="img-foooter ms-4" src="photo/DALL·E 2024-11-15 20.05.59 - Two young brothers, about the same age, standing side by side. They are smiling and dressed casually in simple clothes, reflecting a sense of happines.webp" alt="Ahmed Hassan" style="border-radius: 50%;" width="100" height="130">
+            <p class="ms-4">Hussein and Mohamed el gaid</p>
+            <p class="ms-4 p-web">Assistants</p>
+           </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- ###########################################3 -->
+   <hr>
+   <div class=" p-3  rounded text-center">
+     <h1 class="h2-home2">our courses news</h1> 
+   </div>
+   <!-- ###########################################3 -->
+   <div class="container">
+    <div class="news d-flex bg-light-subtle rounded-2 shadow">
+      <div class="info-news w-75 ">
+        <h1 class="text-primary ps-md-4 pt-md-4" > Clarinet course</h1>
+        <i class="fa-solid fa-calendar-days ps-md-4 pt-md-2 text-secondary-emphasis"></i><span class="text-secondary-emphasis"> Mon, Nov 25th 2024</span>
+        <div class="bg-primary ms-md-4 mt-md-2 rounded-5 " style="width: 150; height: 7px;"></div>
+        <p class="ms-md-4 mt-md-2 text-secondary-emphasis">Discover the elegance of the clarinet in our upcoming course starting November 25th. Perfect for beginners and intermediate players, this course offers expert guidance to develop smooth and warm tones, practical sessions covering classical, jazz, and folk music styles, and flexible online classes designed to suit all schedules.</p>
+        <div class="i-news  ms-md-4 mt-md-5 mb-md-3 "> 
+          <button type="button"  class="btn btn-light px-md-3 text-secondary-emphasis"><i class="fa-brands fa-stumbleupon-circle pe-md-1"></i>Podcast</button>
+          <button type="button" class="btn btn-light px-md-3 text-secondary-emphasis mx-md-2"><i class="fa-solid fa-coins pe-md-1"></i>reservation </button>
+          <button type="button" class="btn btn-light px-md-3 text-secondary-emphasis"><i class="fa-solid fa-comment pe-md-1"></i>Enquire about it</button>
+        </div>
+      </div>
+      <div class="img-news  img-news1 rounded-2 w-50" >
+      </div>
+    </div>
+
+    <div class="news d-flex bg-light-subtle mt-5 rounded-2 shadow">
+      <div class="img-news img-news2 rounded-2 w-50" >
+      </div>
+      <div class="info-news w-75 ">
+        <h1 class="text-primary ps-md-4 pt-md-4" > Trumpet  course</h1>
+        <i class="fa-solid fa-calendar-days ps-md-4 pt-md-2 text-secondary-emphasis"></i><span class="text-secondary-emphasis"> Sun, Dec 1th 2024</span>
+        <div class="bg-primary ms-md-4 mt-md-2 rounded-5 " style="width: 150; height: 7px;"></div>
+        <p class="ms-md-4 mt-md-2 text-secondary-emphasis">Unlock the brilliance of the trumpet with our specialized course beginning December 1st. This course includes comprehensive lessons with professional instructors, techniques to create powerful and expressive melodies, and insights into playing for classical, jazz, and marching band settings.</p>
+        <div class="i-news  ms-md-4 mt-md-5 mb-md-3 "> 
+          <button type="button"  class="btn btn-light px-md-3 text-secondary-emphasis"><i class="fa-brands fa-stumbleupon-circle pe-md-1"></i>Podcast</button>
+          <button type="button" class="btn btn-light px-md-3 text-secondary-emphasis mx-md-2"><i class="fa-solid fa-coins pe-md-1"></i>reservation </button>
+          <button type="button" class="btn btn-light px-md-3 text-secondary-emphasis"><i class="fa-solid fa-comment pe-md-1"></i>Enquire about it</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="news d-flex bg-light-subtle mt-5 rounded-2 shadow">
+      <div class="info-news w-75 ">
+        <h1 class="text-primary ps-md-4 pt-md-4" > Accordion course</h1>
+        <i class="fa-solid fa-calendar-days ps-md-4 pt-md-2 text-secondary-emphasis"></i><span class="text-secondary-emphasis"> Tue, Dec 10th 2024</span>
+        <div class="bg-primary ms-md-4 mt-md-2 rounded-5 " style="width: 150; height: 7px;"></div>
+        <p class="ms-md-4 mt-md-2 text-secondary-emphasis">Start your journey with the accordion in our exciting course starting December 10th. Participants will enjoy step-by-step instruction to master both keys and bellows, exploration of folk, traditional, and contemporary music genres, and interactive online classes with personalized feedback.</p>
+        <div class="i-news  ms-md-4 mt-md-5 mb-md-3 "> 
+          <button type="button"  class="btn btn-light px-md-3 text-secondary-emphasis"><i class="fa-brands fa-stumbleupon-circle pe-md-1"></i>Podcast</button>
+          <button type="button" class="btn btn-light px-md-3 text-secondary-emphasis mx-md-2"><i class="fa-solid fa-coins pe-md-1"></i>reservation </button>
+          <button type="button" class="btn btn-light px-md-3 text-secondary-emphasis"><i class="fa-solid fa-comment pe-md-1"></i>Enquire about it</button>
+        </div>
+      </div>
+      <div class="img-news rounded-2 img-news3 w-50" >
+      </div>
+    </div>
+    
+
+    <div class="news d-flex bg-light-subtle mt-5 mb-5 rounded-2 shadow">
+      <div class="img-news img-news4 rounded-2 w-50" >
+      </div>
+      <div class="info-news w-75 ">
+        <h1 class="text-primary ps-md-4 pt-md-4" > Marimba  course</h1>
+        <i class="fa-solid fa-calendar-days ps-md-4 pt-md-2 text-secondary-emphasis"></i><span class="text-secondary-emphasis"> Sun, Dec 15th 2024</span>
+        <div class="bg-primary ms-md-4 mt-md-2 rounded-5 " style="width: 150; height: 7px;"></div>
+        <p class="ms-md-4 mt-md-2 text-secondary-emphasis">Learn the art of the marimba in our course starting December 15th. Designed for all skill levels, it offers techniques for creating rich, warm, and captivating tones, practice sessions focused on orchestral and modern music styles, and guidance from professional percussionists in a supportive environment.</p>
+        <div class="i-news  ms-md-4 mt-md-5 mb-md-3 "> 
+          <button type="button"  class="btn btn-light px-md-3 text-secondary-emphasis"><i class="fa-brands fa-stumbleupon-circle pe-md-1"></i>Podcast</button>
+          <button type="button" class="btn btn-light px-md-3 text-secondary-emphasis mx-md-2"><i class="fa-solid fa-coins pe-md-1"></i>reservation </button>
+          <button type="button" class="btn btn-light px-md-3 text-secondary-emphasis"><i class="fa-solid fa-comment pe-md-1"></i>Enquire about it</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- ############################################ -->
+   <div class=" p-3  rounded text-center">
+      <h1 class="h2-home2">Join Us</h1> 
+   </div>
+   <div class="container">
+    <div class="row mb-5">
+     <div class=" col-12 mx-5 mx-md-0 col-md-3   text-center ">
+      <div class="i-3d bg-white w-75 rounded-2 shadow" style="height: 220;">
+       <h4 class="text-primary pt-3 ">Subscribe Now</h4>
+       <a href="#"><img class="w-50 h-50 rounded-2 mt-3 shadow" src="https://img.freepik.com/premium-photo/twitter-logo-with-3d-render-etched-glass-material-pulsating-glow-bright-blue-color-scheme-isolated_1020495-695448.jpg?uid=R162970439&ga=GA1.1.1797260353.1726583975&semt=ais_hybrid" alt="#"></a>
+       <h4 class="text-primary pt-2">Go to link</h4>
+      </div>
+      </div>
+      <!-- ############################################ -->
+      <div class=" col-12 mx-5 mx-md-0 col-md-3 mt-5 mt-md-0 text-center ">
+        <div class="i-3d bg-white w-75 rounded-2 shadow" style="height: 220;">
+         <h4 class="text-primary pt-3 ">Follow</h4>
+         <a href="#"><img class="w-50 h-50 rounded-2 mt-3 shadow" src="photo/DALL·E 2024-11-26 22.42.24 - A 3D-style rendering of the WhatsApp icon, featuring the classic phone and chat bubble design in a modern, glossy style. The icon is glowing subtly, p.webp" alt="#"></a>
+         <h4 class="text-primary pt-2">Go to link</h4>
+        </div>
+      </div>
+      <!-- ############################################ -->
+      <div class=" col-12 mx-5 mx-md-0 col-md-3 mt-5 mt-md-0 text-center ">
+        <div class="i-3d bg-white w-75 rounded-2 shadow" style="height: 220;">
+         <h4 class="text-primary pt-3 ">Watch vedios</h4>
+         <a href="#"><img class="w-50 h-50 rounded-2 mt-3 shadow" src="photo/DALL·E 2024-11-26 22.45.13 - A 3D-style rendering of the Instagram icon, featuring the classic camera design in a vibrant, modern glossy style with the iconic gradient colors. The.webp" alt="#"></a>
+         <h4 class="text-primary pt-2">Go to link</h4>
+        </div>
+      </div>
+      <!-- ############################################ -->
+      <div class=" col-12 mx-5 mx-md-0 col-md-3 mt-5 mt-md-0  text-center ">
+        <div class="i-3d bg-white w-75 rounded-2 shadow" style="height: 220;">
+         <h4 class="text-primary pt-3 ">Like the page</h4>
+         <a href="#"><img class="w-50 h-50 rounded-2 mt-3 shadow" src="https://img.freepik.com/premium-vector/shiny-metallic-silver-linkedin-icon-with-black-backdrop_462839-3713.jpg?uid=R162970439&ga=GA1.1.1797260353.1726583975&semt=ais_hybrid" alt="#"></a>
+         <h4 class="text-primary pt-2">Go to link</h4>
+        </div>
+      </div>
+     </div>
+   </div>
+  <!-- ############################################ -->
+
+  <div class="container-fluid bg-primary pb-5">
+    <div class="row border-bottom border-secondary-subtle">
+      <div class=" col-12  col-md-4   text-center ">
+        <div >
+          <div class=" my-3 border-top border-bottom border-secondary-subtle">
+            <img class=" img-footer-ttt rounded-circle my-3 " src="photo/DALL·E 2024-11-07 19.52.53 - A modern, stylish logo for a music website named 'Sh-music'. This version features a minimalist design with rounded, smooth typography, incorporating .webp" width="70" height="70" alt="#">
+            <span class="text-white " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large;">Good Company</span>
+          </div>
+          <p class="text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tel : 000-000-000</p>
+          <p class="text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Address : EGYPT</p>
+          <p class="text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Fax : 000-000-000</p>
+        </div>
+      </div>
+      <!-- ########################################### -->
+      <div class=" col-12  col-md-4   text-center ">
+        <div>
+          <div class=" my-3 border-top border-bottom border-secondary-subtle">
+            <img class=" img-footer-ttt rounded-circle my-3 " src="photo/DALL·E 2024-11-07 19.52.53 - A modern, stylish logo for a music website named 'Sh-music'. This version features a minimalist design with rounded, smooth typography, incorporating .webp" width="70" height="70" alt="#">
+            <span class="text-white " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large;">Important Links</span>
+          </div>
+          <a href="#" class="text-decoration-none link-footer"><p class="text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Visit Us</p></a>
+          <a href="#" class="text-decoration-none link-footer"><p class="text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Take alook</p></a>
+          <a href="#" class="text-decoration-none link-footer"><p class="text-dark" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Your health is more important</p></a>
+        </div>
+      </div>
+      <!-- ########################################### -->
+      <div class=" col-12  col-md-4   text-center ">
+        <div >
+          <div class=" my-3 border-top border-bottom border-secondary-subtle">
+            <img class=" img-footer-ttt rounded-circle my-3 " src="photo/DALL·E 2024-11-07 19.52.53 - A modern, stylish logo for a music website named 'Sh-music'. This version features a minimalist design with rounded, smooth typography, incorporating .webp" width="70" height="70" alt="#">
+            <span class="text-white " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large;">Vision</span>
+          </div>
+          <p class="text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Serveices for all</p>
+          <p class="text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Provide best Serveices</p>
+          <p class="text-white" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">You will be better than before</p>
+        </div>
+      </div>
+     </div>
+     <!-- ########################################### --><!-- ########################################### -->
+     <div class=" p-3   text-center border-bottom border-secondary-subtle">
+      <h1 class="h2-home2">COPYRIGHT @ 2024 AHMED HASSAN, GOOD COMPANY, ALL RIGHTS</h1> 
+     </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+   
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  
+  </script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
